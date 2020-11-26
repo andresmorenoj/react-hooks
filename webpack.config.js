@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpacklugin = require('html-webpack-plugin');
-const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -8,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -31,7 +31,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: miniCssExtractPlugin.loader,
+            loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
         ],
@@ -53,13 +53,14 @@ module.exports = {
       template: './public/index.html',
       filename: './index.html',
     }),
-    new miniCssExtractPlugin({
+    new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
+    historyApiFallback: true,
     port: 3005,
   },
 };

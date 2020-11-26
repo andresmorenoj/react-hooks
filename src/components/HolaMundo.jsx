@@ -2,8 +2,8 @@ import React from 'react';
 
 import '../assets/styles/components/App.scss';
 
-const App = () => {
+const HolaMundo = () => {
   return <h1>Hola, Mundo!</h1>;
 };
 
-export default App;
+export default HolaMundo;
