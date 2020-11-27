@@ -10,24 +10,20 @@ const Information = () => {
         </div>
         <div className="Information-form">
           <form action="">
-            <input type="text" placeholder='Nombre completo' name='name' />
-            <input type="email" placeholder='Correo Electrónico' name='email' />
-            <input type="text" placeholder='Dirección' name='address' />
-            <input type="text" placeholder='apto' name='apto' />
-            <input type="text" placeholder='Ciudad' name='city' />
-            <input type="text" placeholder='Estado' name='State' />
-            <input type="text" placeholder='Pais' name='Country' />
-            <input type="text" placeholder='Código Postal' name='cp' />
-            <input type="tel" placeholder='Teléfono' name='phone' />
+            <input type="text" placeholder="Nombre completo" name="name" />
+            <input type="email" placeholder="Correo Electrónico" name="email" />
+            <input type="text" placeholder="Dirección" name="address" />
+            <input type="text" placeholder="apto" name="apto" />
+            <input type="text" placeholder="Ciudad" name="city" />
+            <input type="text" placeholder="Estado" name="State" />
+            <input type="text" placeholder="Pais" name="Country" />
+            <input type="text" placeholder="Código Postal" name="cp" />
+            <input type="tel" placeholder="Teléfono" name="phone" />
           </form>
         </div>
         <div className="Information-buttons">
-          <div className="Information-back">
-            Regresar
-          </div>
-          <div className="Information-next">
-            Pagar
-          </div>
+          <div className="Information-back">Regresar</div>
+          <div className="Information-next">Pagar</div>
         </div>
       </div>
       <div className="Information-sidebar">

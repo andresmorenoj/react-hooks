@@ -11,12 +11,12 @@ const Checkout = () => {
             <h4>ITEM name</h4>
             <span>$10</span>
           </div>
-          <button type='button'>Eliminar</button>
+          <button type="button">Eliminar</button>
         </div>
       </div>
       <div className="Checkout-sidebar">
         <h3>Precio Total: $10</h3>
-        <button type='button'>Continuar pedido</button>
+        <button type="button">Continuar pedido</button>
       </div>
     </div>
   );
