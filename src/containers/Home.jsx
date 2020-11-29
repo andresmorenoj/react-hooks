@@ -5,7 +5,6 @@ import Products from '../components/Products';
 import initialState from '../initialState.js';
 
 const Home = () => {
-
   return (
     <>
       <Helmet>
