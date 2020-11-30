@@ -5,8 +5,7 @@ import '../assets/styles/components/Products.scss';
 
 const Products = () => {
   // @ts-ignore
-  const { state, addToCart } = useContext(AppContext);
-  const { products } = state;
+  const { products, addToCart } = useContext(AppContext);
 
   const handleAddToCard = (product) => () => {
     addToCart(product);
